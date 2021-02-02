@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import {io} from 'socket.io-client';
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -15,3 +15,15 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+//connecting to Socket.IO chat server
+// const socket = io("https://spotim-demo-chat-server.herokuapp.com");
+const socket = io("http://localhost:3000");
+
+
+socket.on("connect", function() {
+    console.log("connected to chat server!");
+});
+socket.on("disconnect", function() {
+    console.log("disconnected from chat server!");
+});
