@@ -17,8 +17,8 @@ ReactDOM.render(
 reportWebVitals();
 
 //connecting to Socket.IO chat server
-// const socket = io("https://spotim-demo-chat-server.herokuapp.com");
-const socket = io("http://localhost:3000");
+const socket = io("https://ow-chat-server.herokuapp.com");
+
 
 
 socket.on("connect", function() {
@@ -27,3 +27,4 @@ socket.on("connect", function() {
 socket.on("disconnect", function() {
     console.log("disconnected from chat server!");
 });
+
