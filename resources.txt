@@ -1,4 +1,3 @@
-
 Resources
 SocketIO Endpoint:
 https://ow-chat-server.herokuapp.com/
@@ -6,8 +5,8 @@ https://ow-chat-server.herokuapp.com/
 event name: 'ow/chat'
 
 Optional user avatars for your usage:
-https://ow-public-images.s3.amazonaws.com/chat-resources/avatars/001-snorlax.png
-https://ow-public-images.s3.amazonaws.com/chat-resources/avatars/002-psyduck.png
-https://ow-public-images.s3.amazonaws.com/chat-resources/avatars/003-pikachu.png
-https://ow-public-images.s3.amazonaws.com/chat-resources/avatars/004-jigglypuff.png
-https://ow-public-images.s3.amazonaws.com/chat-resources/avatars/005-bullbasaur.png
+https://ow-publisher-assets.s3.amazonaws.com/chat-app/avatars/001-snorlax.png
+https://ow-publisher-assets.s3.amazonaws.com/chat-app/avatars/002-psyduck.png
+https://ow-publisher-assets.s3.amazonaws.com/chat-app/avatars/003-pikachu.png
+https://ow-publisher-assets.s3.amazonaws.com/chat-app/avatars/004-jigglypuff.png
+https://ow-publisher-assets.s3.amazonaws.com/chat-app/avatars/005-bullbasaur.png
