@@ -1,0 +1,10 @@
+.user-name-input {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 200px;
+  flex-direction: column;
+}
+.app-container {
+  margin-top: 20px;
+  height: 80vh;
+}

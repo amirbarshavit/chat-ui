@@ -1,0 +1,18 @@
+.messages-box {
+  overflow: auto;
+  height: 90%;
+  padding: 20px;
+}
+.msg-username-text {
+  margin-left: 10px;
+}
+.msg-box {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-left: 10px;
+  margin: 2px;
+}
+.mine {
+  background-color: lightblue;
+}
