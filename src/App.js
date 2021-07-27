@@ -37,14 +37,7 @@ function App() {
   return (
     <Container className="app-container">
       <Box height="100%">
-        {!userDetails ? (
-          <div className="user-name-input">
-            <div className="insert-user-name-title">
-              Please insert a user name:
-            </div>
-            <SingleInputForm onSubmit={onUserNameSubmit} buttonText="submit" />
-          </div>
-        ) : (
+        {userDetails ? (
           <>
             <div className="login-user">Login user:{userDetails.name}</div>
             <MessagesListBox
@@ -53,6 +46,13 @@ function App() {
             />
             <SingleInputForm onSubmit={onSubmit} />
           </>
+        ) : (
+          <div className="user-name-input">
+            <div className="insert-user-name-title">
+              Please insert a user name:
+            </div>
+            <SingleInputForm onSubmit={onUserNameSubmit} buttonText="submit" />
+          </div>
         )}
       </Box>
     </Container>
