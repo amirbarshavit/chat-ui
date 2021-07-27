@@ -39,11 +39,14 @@ function App() {
       <Box height="100%">
         {!userDetails ? (
           <div className="user-name-input">
-            <div>Please insert a user name:</div>
+            <div className="insert-user-name-title">
+              Please insert a user name:
+            </div>
             <SingleInputForm onSubmit={onUserNameSubmit} buttonText="submit" />
           </div>
         ) : (
           <>
+            <div className="login-user">Login user:{userDetails.name}</div>
             <MessagesListBox
               messages={messages}
               currentUserId={userDetails.userId}
